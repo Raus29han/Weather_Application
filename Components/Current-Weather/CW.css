@@ -1,0 +1,145 @@
+.weather {
+    width: 90%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 10px -2px 20px 2px rgba(254, 232, 33, 0.3);
+    color: #fff;
+    background-color: #201f1f;
+    margin: 20px auto 0 auto;
+    padding: 0 20px 20px 20px;
+}
+
+
+
+
+.top, .bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city {
+    font-size: 3vw; /* Responsive font size */
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 2px;
+    padding-left: 20px;
+}
+
+.weather-condition {
+    font-size: 1.5vw; /* Responsive font size */
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.Icon {
+    width: 25vw; /* Responsive width */
+    max-width: 95px; /* Maintain max size */
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.bounce {
+    display: inline-block;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+
+.temp {
+    font-size: 5vw;
+    font-weight: 500;
+    margin: 10px 0 10px 30px;
+    padding-top: 50px;
+}
+
+.details {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 10%; 
+}
+
+.parameter-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parameter-label-details {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.5vw; 
+    letter-spacing: .5px;
+    line-height: 1.5;
+    border-bottom: 1px solid rgb(145, 220, 34);
+}
+
+.parameter-label {
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.5vw; 
+}
+
+.parameter-value {
+    text-align: right;
+    font-weight: 500;
+    font-size: 1.5vw; 
+}
+
+/* Media Queries for additional responsiveness */
+@media (max-width: 768px) {
+    .top,.bottom{
+        flex-wrap: wrap;
+    }
+    .temp {
+        font-size: 10vw;
+        padding-top: 30px;
+    }
+
+    .city, .weather-condition {
+        font-size: 8vw;
+    }
+
+    .parameter-label-details, .parameter-label, .parameter-value {
+        font-size: 4vw; 
+    }
+}
+
+@media (max-width: 480px) {
+
+    .top,.bottom{
+        flex-wrap: wrap;
+    }
+
+    .city, .weather-condition {
+        font-size: 10vw; 
+    }
+
+    .temp {
+        font-size: 20vw; 
+    }
+
+    .Icon {
+        padding: 3vw;
+        width: 30vw; 
+    }
+
+    .parameter-label-details, .parameter-label, .parameter-value {
+        font-size: 5vw; 
+    }
+}

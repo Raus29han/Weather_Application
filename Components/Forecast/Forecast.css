@@ -1,0 +1,78 @@
+.title{
+    font-size: 25px;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.Daily-items{
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    height: 40px;
+    margin: 10px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding: 5px 20px;
+    cursor: pointer;
+} 
+
+.Daily-items:hover{
+    box-shadow: 5px -2px 10px 2px rgba(96, 33, 254, 0.3);
+}
+
+.Days{
+    color: #212121;
+    flex: 1 1;
+    font-weight: 700;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.Details{
+    color: #212121;
+    flex: 1 1;
+    margin-right: 15px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.min-max{
+    color: #757575;
+}
+
+.daily-details-grid{
+    grid-row-gap: 0;
+    grid-column-gap: 15px;
+    column-gap: 15px;
+    row-gap: 0;
+    display: grid;
+    flex: 1 1;
+    grid-template-columns: auto auto;
+    padding: 5px 15px;
+}
+
+.daily-details-grid-item{
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #edebe8;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.daily-details-grid-item label:first-child{
+    color: #757575;
+    font-weight: 500;
+}
+
+.icon-small{
+    padding: 5px;
+}
+
+.daily-details-grid-item label:last-child{
+    color: #212121;
+    font-weight: 500;
+}
