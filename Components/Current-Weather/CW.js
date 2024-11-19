@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import "./CW.css";
-import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -23,9 +22,9 @@ const CW = ({ data }) => {
             <p className="weather-condition">{data.weather[0].description}</p>
           </div>
 
-          <Image
+          <img
             className="Icon bounce"
-            src={`Public/Icons/${data.weather[0].icon}.png`}
+            src={`/Icons/${data.weather[0].icon}.png`}
             width={80}
             height={80}
             alt="Weather Icon"
