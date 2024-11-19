@@ -7,7 +7,6 @@ import {
   AccordionItemHeading,
   AccordionItemPanel,
 } from "react-accessible-accordion";
-import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -70,9 +69,9 @@ const Forecast = ({ data }) => {
             <AccordionItemHeading>
               <AccordionItemButton>
                 <div onClick={() => handleClick(idx)} className="Daily-items">
-                  <Image
+                  <img
                     className="icon-small"
-                    src={`Public/Icons/${item.weather[0].icon}.png`}
+                    src={`/Icons/${item.weather[0].icon}.png`}
                     width={40}
                     height={40}
                     alt="Weather"
