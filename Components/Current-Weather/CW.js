@@ -25,7 +25,7 @@ const CW = ({ data }) => {
 
           <Image
             className="Icon bounce"
-            src={`/Icons/${data.weather[0].icon}.png`}
+            src={`Public/Icons/${data.weather[0].icon}.png`}
             width={80}
             height={80}
             alt="Weather Icon"
