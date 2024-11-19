@@ -72,7 +72,7 @@ const Forecast = ({ data }) => {
                 <div onClick={() => handleClick(idx)} className="Daily-items">
                   <Image
                     className="icon-small"
-                    src={`/Icons/${item.weather[0].icon}.png`}
+                    src={`Public/Icons/${item.weather[0].icon}.png`}
                     width={40}
                     height={40}
                     alt="Weather"
