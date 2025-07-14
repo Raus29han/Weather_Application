@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./CW.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import Image from 'next/image';
 
 const CW = ({ data }) => {
   useGSAP(() => {
@@ -22,7 +23,7 @@ const CW = ({ data }) => {
             <p className="weather-condition">{data.weather[0].description}</p>
           </div>
 
-          <img
+          <Image
             className="Icon bounce"
             src={`/Icons/${data.weather[0].icon}.png`}
             width={80}
